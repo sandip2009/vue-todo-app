@@ -11,3 +11,6 @@ use App\Http\Controllers\TodoController;
 Route::resource('todos', TodoController::class)->only([
     'index', 'store', 'update', 'destroy'
 ]);
+
+// book ressurces
+Route::apiResource('books', \App\Http\Controllers\BookController::class);
